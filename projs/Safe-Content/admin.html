@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body onload="onAdminInit()">
+    <h1>Welcom back: admin !</h1>
+
+    <section class="filter-container">
+        <h2>Filter</h2>
+        <select onchange="onSetSorting(this.value)">
+            <option></option>
+            <option value="NAME">Name</option>
+            <option value="LAST-LOGIN">Last-Login</option>
+        </select>
+    </section>
+
+    <table>
+        <tbody id="tbody"></tbody>
+    </table>
+
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/content-service.js"></script>
+    <script src="js/content-controller.js"></script>
+</body>
+
+</html>

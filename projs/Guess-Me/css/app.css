@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: radial-gradient(blue, rgb(101, 237, 247), yellow);
+}
+
+header {
+    text-align: center;
+    color: #fcf064;
+    font-size: 3em;
+    height: 400px;
+}
+
+header img {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+}
+
+.jump {
+    animation-name: jump;
+    animation-timing-function: ease;
+}
+
+@keyframes jump {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+    30% {
+        transform: scale(.9, 1.1) translateY(-100px);
+    }
+    50% {
+        transform: scale(1, 1) translateY(0);
+    }
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: lightblue;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.ending-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ending-form input {
+    margin: 10px;
+    font-size: 1em;
+}
+
+.ending-form label {
+    font-weight: bold;
+}
+
+.ending-form input,
+label {
+    height: 40px;
+    width: 300px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.btn-start {
+    background-color: #ffc107;
+}
+
+.btn-yes {
+    background-color: #28a745;
+}
+
+.btn-no {
+    background-color: #ff0018;
+}
+
+.btn-add-guess {
+    background-color: #fd7e14;
+    width: 250px;
+    color: white;
+}
+
+.btn-close-modal {
+    background-color: aqua;
+    font-size: 30px;
+    color: rgb(247, 247, 107);
+}
+
+.btn-close-modal:hover {
+    border: 3px solid yellow
+}
+
+.modal {
+    background-image: linear-gradient(to right, blue, rgb(118, 230, 238));
+    position: absolute;
+    top: 140px;
+    right: 50px;
+    min-width: 85vw;
+    min-height: 30vh;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.modal p {
+    margin: 0;
+}
+
+.modal img {
+    height: 300px
+}

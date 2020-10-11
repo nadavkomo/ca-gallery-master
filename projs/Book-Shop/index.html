@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book-shop</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<!-- <img src="./imgs/harry-potter.jpg" alt="" srcset="">
+<img src="./imgs/The Chronicles of Narnia.jpg" alt="" srcset="">
+<img src="./imgs/The Hunter Game.jpg" alt="" srcset=""> -->
+<!-- <button onclick="onReadAboutTheBook()">Read</button>
+<button onclick="onUpdateTheBook()">Update</button>
+<button onclick="onRemoveTheBook()">Delete</button> -->
+
+<body onload="onInit()">
+    <h1>Welcom to the book shop!</h1>
+    <div class="container">
+        <section class="add-book">
+            <h2>Add Book</h2>
+            <span>for adding please insert the values and than press on add buttun</span>
+            <input type="text" name="name" placeholder="Enter the Name" />
+            <input type="text" name="price" placeholder="Enter the Price" />
+            <input type="text" name="img" placeholder="Enter the URL img" />
+            <button onclick="onAddBook()">Add</button>
+        </section>
+        <table>
+            <tbody id="tbody"></tbody>
+        </table>
+        <section class="update-book">
+            <h2>Update Book</h2>
+            <span>for updating please insert the values and than press on the specific update buttun </span>
+            <input type="text" name="name" placeholder="Enter the Name" />
+            <input type="text" name="price" placeholder="Enter the Price" />
+            <input type="text" name="img" placeholder="Enter the URL img" />
+        </section>
+    </div>
+    <section class="modal" hidden>
+        <button onclick="onCloseModal()">Close</button>
+        <h5></h5>
+        <h6></h6>
+        <p></p>
+        <section class="rate"></section>
+    </section>
+
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-controller.js"></script>
+</body>
+
+</html>

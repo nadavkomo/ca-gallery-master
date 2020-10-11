@@ -1,0 +1,58 @@
+body {
+    background-color: skyblue;
+    /* background-image: url('img/Balloons.png'); */
+
+
+}
+.sun{
+    background-color: rgb(225, 248, 16);
+    padding: 20px;
+    border-radius: 50% ;
+}
+.balloon{
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50% ;
+    bottom: 10px;
+}
+.balloon:hover{
+    cursor: pointer;
+}
+.balloon1 {
+    background-color: springgreen;
+    left: 50px;
+}
+.balloon2 {
+    background-color: rgb(240, 243, 46);
+    left: 250px;
+}
+.balloon3 {
+    background-color: red;
+    left: 450px;
+}
+.balloon4 {
+    background-color: rgb(228, 37, 180);
+    left: 650px;
+}
+.balloon5 {
+    background-color: rgb(240, 173, 50);
+    left: 850px;
+}
+.balloon6 {
+    background-color: rgb(136, 37, 228);
+    left: 1050px;
+}
+.balloon7 {
+    background-color: rgb(25, 216, 105);
+    left: 1250px;
+}
+.fade {
+    opacity: 0;
+    transition: 0.5s linear;
+}
+.race-end{
+    display: none;
+}
+
+

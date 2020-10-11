@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>safe-contect</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+
+    <h1>Sign in!</h1>
+    <span class="secret-content hidden">secret-content</span>
+    <a class="href-admin hidden" href="./admin.html">Admin Control</a>
+    <div class="container">
+        <section class="logging">
+            <span class="username"></span>
+            <button class="logout" onclick="onLogout()">Logout</button>
+            <img src="imgs/login-icon.jpg">
+            <label>Username</label>
+            <input class="username-input" type="text" placeholder="Enter Username">
+            <label>Password</label>
+            <input class="password-input" type="text" placeholder="Enter Password">
+            <img class="btn" src="imgs/login.jpg" onclick="onLogin()">
+        </section>
+        <section class="avatars">
+            <img onclick="renderPageAvatar(this)" class="Elon avatar hidden" src="imgs/Elon.png">
+            <img onclick="renderPageAvatar(this)" class="Dvir avatar hidden" src="imgs/Dvir.jpg">
+            <img onclick="renderPageAvatar(this)" class="Noam avatar hidden" src="imgs/Noam.jpg">
+        </section>
+    </div>
+
+
+    <!-- <script src="js/services/util-service.js"></script> -->
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/content-service.js"></script>
+    <script src="js/content-controller.js"></script>
+</body>
+
+</html>

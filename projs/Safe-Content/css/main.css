@@ -1,0 +1,41 @@
+body {
+    background-image: linear-gradient(to right, rgb(100, 245, 71), orange, red);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.logging {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatars {
+    display: flex;
+    flex-direction: column;
+}
+
+.logging>* {
+    padding: 10px;
+}
+
+img {
+    width: 10em;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.secret-content {
+    font-size: 25px;
+    background-color: blue;
+}

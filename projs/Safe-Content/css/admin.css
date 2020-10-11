@@ -1,0 +1,19 @@
+.td-header {
+    background: linear-gradient(to bottom, rgba(223, 41, 41, 0.76), rgba(211, 236, 69, 0.5));
+    color: rgb(123, 80, 241);
+    text-shadow: 1px 1px 1px rgb(204, 41, 41);
+}
+
+td {
+    background: linear-gradient(to bottom, rgba(223, 41, 41, 0.76), rgba(211, 236, 69, 0.5));
+    border: 2px solid rgb(248, 159, 42);
+}
+
+.filter-container {
+    background-color: lightskyblue;
+    padding: 10px;
+}
+
+.filter-container select {
+    font-size: 1.1em;
+}

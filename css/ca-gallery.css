@@ -7,6 +7,10 @@ p {
     line-height: 1.75;
 }
 
+.fa-gmail {
+    background-image: url('img/logos/gmail.jpg')
+}
+
 a {
     color: #fed136;
 }

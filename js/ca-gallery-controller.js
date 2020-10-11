@@ -61,11 +61,13 @@ function renderModal(proj) {
 }
 
 function onSubmitEmail() {
-    console.log('hi');
     var email = $('#Email').val();
     var subject = $('#Subject').val();
-    var message = $('#Message').val();
-    location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=nadavkomo@gmail.com&su=${subject}&body=${message}\nMy e-mail is ${email}`
+    var message = $('#Message').val() + `\n My e-mail is ${email}`
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=nadavkomo@gmail.com&su=${subject}&body=${message}`, '_blank');
+    $('#Email').val('');
+    $('#Subject').val('');
+    $('#Message').val('');
 }
 
 

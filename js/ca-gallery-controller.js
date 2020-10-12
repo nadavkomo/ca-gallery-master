@@ -64,12 +64,13 @@ function onSubmitEmail() {
     var email = $('#Email').val();
     var subject = $('#Subject').val();
     var message = $('#Message').val() + `\n My e-mail is ${email}`
-    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=nadavkomo@gmail.com&su=${subject}&body=${message}`, '_blank');
+    var regex = /\n/g
+    var newMessage = message.replaceAll(regex, '%0D%0A')
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=nadavkomo@gmail.com&su=${subject}&body=${newMessage}`, '_blank');
     $('#Email').val('');
     $('#Subject').val('');
     $('#Message').val('');
 }
-
 
 
 
